@@ -35,3 +35,22 @@ var metrics = context.Regression.Evaluate(predictions);
 $"R^2 - {metrics.RSquared}".Dump();
 
 
+//Load sample data
+var sampleData = new MLNetCrashCourseModel.ModelInput()
+{
+    Longitude = -122.22F,
+    Latitude = 37.86F,
+    Housing_median_age = 21F,
+    Total_rooms = 7099F,
+    Total_bedrooms = 1106F,
+    Population = 2401F,
+    Households = 1138F,
+    Median_income = 8.3014F,
+    Ocean_proximity = @"NEAR BAY",
+};
+
+//Load model and predict output
+var result = MLNetCrashCourseModel.Predict(sampleData);
+
+$"Predicted Result - {result}".Dump();
+

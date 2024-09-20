@@ -9,10 +9,11 @@
     <PackageReference Include="Dumpify" Version="0.6.6" />
     <PackageReference Include="Microsoft.ML" Version="3.0.1" />
     <PackageReference Include="Microsoft.ML.FastTree" Version="3.0.1" />
+    <PackageReference Include="Microsoft.ML.LightGbm" Version="3.0.1" />
     <PackageReference Include="Plotly.NET" Version="3.0.1" />
   </ItemGroup>
-  <ItemGroup Label="MLModel1">
-    <None Include="MLModel1.mlnet">
+  <ItemGroup Label="MLNetCrashCourseModel">
+    <None Include="MLNetCrashCourseModel.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
