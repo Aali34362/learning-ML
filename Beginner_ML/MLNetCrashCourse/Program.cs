@@ -34,9 +34,8 @@ var metrics = context.Regression.Evaluate(predictions);
 
 $"R^2 - {metrics.RSquared}".Dump();
 
-
 //Load sample data
-var sampleData = new MLNetCrashCourseModel.ModelInput()
+var sampleData = new MLModel1.ModelInput()
 {
     Longitude = -122.22F,
     Latitude = 37.86F,
@@ -50,7 +49,4 @@ var sampleData = new MLNetCrashCourseModel.ModelInput()
 };
 
 //Load model and predict output
-var result = MLNetCrashCourseModel.Predict(sampleData);
-
-$"Predicted Result - {result}".Dump();
-
+var result = MLModel1.Predict(sampleData);

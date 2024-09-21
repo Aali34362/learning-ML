@@ -5,12 +5,12 @@ using System;
 using System.Linq;
 using System.IO;
 using System.Collections.Generic;
-namespace MLNetCrashCourse
+namespace MLModel1_ConsoleApp1
 {
-    public partial class MLNetCrashCourseModel
+    public partial class MLModel1
     {
         /// <summary>
-        /// model input class for MLNetCrashCourseModel.
+        /// model input class for MLModel1.
         /// </summary>
         #region model input class
         public class ModelInput
@@ -60,7 +60,7 @@ namespace MLNetCrashCourse
         #endregion
 
         /// <summary>
-        /// model output class for MLNetCrashCourseModel.
+        /// model output class for MLModel1.
         /// </summary>
         #region model output class
         public class ModelOutput
@@ -105,7 +105,7 @@ namespace MLNetCrashCourse
 
         #endregion
 
-        private static string MLNetModelPath = Path.GetFullPath("MLNetCrashCourseModel.mlnet");
+        private static string MLNetModelPath = Path.GetFullPath("MLModel1.mlnet");
 
         public static readonly Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(() => CreatePredictEngine(), true);
 

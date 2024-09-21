@@ -10,7 +10,7 @@ using Plotly.NET.LayoutObjects;
 
 namespace MLNetCrashCourse
 {
-    public partial class MLNetCrashCourseModel
+    public partial class MLModel1
     {
         /// <summary>
         /// Permutation feature importance (PFI) is a technique to determine the importance 

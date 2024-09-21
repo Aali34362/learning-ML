@@ -11,9 +11,9 @@ using Microsoft.ML.Trainers;
 using Microsoft.ML.Trainers.LightGbm;
 using Microsoft.ML.Transforms;
 
-namespace MLNetCrashCourse
+namespace MLModel1_ConsoleApp1
 {
-    public partial class MLNetCrashCourseModel
+    public partial class MLModel1
     {
         public const string RetrainFilePath =  @"D:\Programming\Asp\AspCore\v8\learning-ML\learning-ML\Beginner_ML\MLNetCrashCourse\housing.csv";
         public const char RetrainSeparatorChar = ',';
@@ -94,7 +94,7 @@ namespace MLNetCrashCourse
             var pipeline = mlContext.Transforms.Categorical.OneHotEncoding(@"ocean_proximity", @"ocean_proximity", outputKind: OneHotEncodingEstimator.OutputKind.Indicator)      
                                     .Append(mlContext.Transforms.ReplaceMissingValues(new []{new InputOutputColumnPair(@"longitude", @"longitude"),new InputOutputColumnPair(@"latitude", @"latitude"),new InputOutputColumnPair(@"housing_median_age", @"housing_median_age"),new InputOutputColumnPair(@"total_rooms", @"total_rooms"),new InputOutputColumnPair(@"total_bedrooms", @"total_bedrooms"),new InputOutputColumnPair(@"population", @"population"),new InputOutputColumnPair(@"households", @"households"),new InputOutputColumnPair(@"median_income", @"median_income")}))      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"ocean_proximity",@"longitude",@"latitude",@"housing_median_age",@"total_rooms",@"total_bedrooms",@"population",@"households",@"median_income"}))      
-                                    .Append(mlContext.Regression.Trainers.LightGbm(new LightGbmRegressionTrainer.Options(){NumberOfLeaves=4,NumberOfIterations=1740,MinimumExampleCountPerLeaf=23,LearningRate=0.21057809857678475,LabelColumnName=@"median_house_value",FeatureColumnName=@"Features",Booster=new GradientBooster.Options(){SubsampleFraction=0.09978688051642948,FeatureFraction=0.99999999,L1Regularization=2E-10,L2Regularization=0.9999997766729865},MaximumBinCountPerFeature=105}));
+                                    .Append(mlContext.Regression.Trainers.LightGbm(new LightGbmRegressionTrainer.Options(){NumberOfLeaves=4,NumberOfIterations=2632,MinimumExampleCountPerLeaf=20,LearningRate=0.2988823065478738,LabelColumnName=@"median_house_value",FeatureColumnName=@"Features",Booster=new GradientBooster.Options(){SubsampleFraction=0.0743537586401969,FeatureFraction=0.99999999,L1Regularization=3.346276058409456E-10,L2Regularization=0.9999997766729865},MaximumBinCountPerFeature=266}));
 
             return pipeline;
         }

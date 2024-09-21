@@ -107,8 +107,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LightGbmRegression",
-        "Score": 0.84108794990308045,
-        "RuntimeInSeconds": 1.642,
+        "Score": 0.8421570656634314,
+        "RuntimeInSeconds": 1.689,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e5",
           "e0": {
@@ -157,13 +157,13 @@
           },
           "e5": {
             "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 23,
-            "LearningRate": 0.21057809857678475,
-            "NumberOfTrees": 1740,
-            "SubsampleFraction": 0.099786880516429477,
-            "MaximumBinCountPerFeature": 105,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.29888230654787379,
+            "NumberOfTrees": 2632,
+            "SubsampleFraction": 0.0743537586401969,
+            "MaximumBinCountPerFeature": 266,
             "FeatureFraction": 0.99999999,
-            "L1Regularization": 2E-10,
+            "L1Regularization": 3.3462760584094561E-10,
             "L2Regularization": 0.99999977667298645,
             "LabelColumnName": "median_house_value",
             "FeatureColumnName": "Features"
@@ -174,8 +174,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LightGbmRegression",
-        "Score": 0.82610728307018066,
-        "RuntimeInSeconds": 3.65,
+        "Score": 0.82901593158837,
+        "RuntimeInSeconds": 0.477,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e5",
           "e0": {
@@ -223,149 +223,15 @@
             "OutputColumnName": "Features"
           },
           "e5": {
-            "NumberOfLeaves": 5736,
-            "MinimumExampleCountPerLeaf": 20,
-            "LearningRate": 0.035907741254040226,
-            "NumberOfTrees": 126,
-            "SubsampleFraction": 0.0049571393176953962,
-            "MaximumBinCountPerFeature": 54,
-            "FeatureFraction": 0.96494450780823438,
-            "L1Regularization": 2E-10,
-            "L2Regularization": 0.99999977667298645,
-            "LabelColumnName": "median_house_value",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "LightGbmRegression",
-        "Score": 0.78481290423622452,
-        "RuntimeInSeconds": 0.436,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e5",
-          "e0": {
-            "OutputColumnNames": [
-              "ocean_proximity"
-            ],
-            "InputColumnNames": [
-              "ocean_proximity"
-            ]
-          },
-          "e1": {
-            "OutputColumnNames": [
-              "longitude",
-              "latitude",
-              "housing_median_age",
-              "total_rooms",
-              "total_bedrooms",
-              "population",
-              "households",
-              "median_income"
-            ],
-            "InputColumnNames": [
-              "longitude",
-              "latitude",
-              "housing_median_age",
-              "total_rooms",
-              "total_bedrooms",
-              "population",
-              "households",
-              "median_income"
-            ]
-          },
-          "e2": {
-            "InputColumnNames": [
-              "ocean_proximity",
-              "longitude",
-              "latitude",
-              "housing_median_age",
-              "total_rooms",
-              "total_bedrooms",
-              "population",
-              "households",
-              "median_income"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e5": {
-            "NumberOfLeaves": 2237,
-            "MinimumExampleCountPerLeaf": 20,
-            "LearningRate": 0.37431161942186875,
-            "NumberOfTrees": 4,
-            "SubsampleFraction": 0.31073354336508174,
-            "MaximumBinCountPerFeature": 176,
-            "FeatureFraction": 0.86610447900209542,
-            "L1Regularization": 2.0267211833640821E-10,
-            "L2Regularization": 0.90668811447329434,
-            "LabelColumnName": "median_house_value",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "LightGbmRegression",
-        "Score": 0.74029111177740514,
-        "RuntimeInSeconds": 0.504,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e5",
-          "e0": {
-            "OutputColumnNames": [
-              "ocean_proximity"
-            ],
-            "InputColumnNames": [
-              "ocean_proximity"
-            ]
-          },
-          "e1": {
-            "OutputColumnNames": [
-              "longitude",
-              "latitude",
-              "housing_median_age",
-              "total_rooms",
-              "total_bedrooms",
-              "population",
-              "households",
-              "median_income"
-            ],
-            "InputColumnNames": [
-              "longitude",
-              "latitude",
-              "housing_median_age",
-              "total_rooms",
-              "total_bedrooms",
-              "population",
-              "households",
-              "median_income"
-            ]
-          },
-          "e2": {
-            "InputColumnNames": [
-              "ocean_proximity",
-              "longitude",
-              "latitude",
-              "housing_median_age",
-              "total_rooms",
-              "total_bedrooms",
-              "population",
-              "households",
-              "median_income"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e5": {
-            "NumberOfLeaves": 608,
-            "MinimumExampleCountPerLeaf": 20,
-            "LearningRate": 0.99999977667298645,
-            "NumberOfTrees": 4,
-            "SubsampleFraction": 0.33667808488492529,
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 24,
+            "LearningRate": 0.6622569121431201,
+            "NumberOfTrees": 370,
+            "SubsampleFraction": 0.47258665621383333,
             "MaximumBinCountPerFeature": 280,
-            "FeatureFraction": 0.94144664755581,
-            "L1Regularization": 2.6200076650223653E-10,
-            "L2Regularization": 0.45391826776959365,
+            "FeatureFraction": 0.97792966961406158,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 0.99999977667298645,
             "LabelColumnName": "median_house_value",
             "FeatureColumnName": "Features"
           }
@@ -375,8 +241,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
-        "Score": 0.682397520655358,
-        "RuntimeInSeconds": 0.233,
+        "Score": 0.68885232916759143,
+        "RuntimeInSeconds": 0.185,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e4",
           "e0": {
@@ -424,9 +290,131 @@
             "OutputColumnName": "Features"
           },
           "e4": {
-            "NumberOfTrees": 21,
+            "NumberOfTrees": 14,
             "NumberOfLeaves": 4,
-            "FeatureFraction": 0.9171263,
+            "FeatureFraction": 0.9465936,
+            "LabelColumnName": "median_house_value",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.6868609646021796,
+        "RuntimeInSeconds": 0.298,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "ocean_proximity"
+            ],
+            "InputColumnNames": [
+              "ocean_proximity"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "longitude",
+              "latitude",
+              "housing_median_age",
+              "total_rooms",
+              "total_bedrooms",
+              "population",
+              "households",
+              "median_income"
+            ],
+            "InputColumnNames": [
+              "longitude",
+              "latitude",
+              "housing_median_age",
+              "total_rooms",
+              "total_bedrooms",
+              "population",
+              "households",
+              "median_income"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "ocean_proximity",
+              "longitude",
+              "latitude",
+              "housing_median_age",
+              "total_rooms",
+              "total_bedrooms",
+              "population",
+              "households",
+              "median_income"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 43,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.93479985,
+            "LabelColumnName": "median_house_value",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestRegression",
+        "Score": 0.68361037430183225,
+        "RuntimeInSeconds": 0.161,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e4",
+          "e0": {
+            "OutputColumnNames": [
+              "ocean_proximity"
+            ],
+            "InputColumnNames": [
+              "ocean_proximity"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "longitude",
+              "latitude",
+              "housing_median_age",
+              "total_rooms",
+              "total_bedrooms",
+              "population",
+              "households",
+              "median_income"
+            ],
+            "InputColumnNames": [
+              "longitude",
+              "latitude",
+              "housing_median_age",
+              "total_rooms",
+              "total_bedrooms",
+              "population",
+              "households",
+              "median_income"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "ocean_proximity",
+              "longitude",
+              "latitude",
+              "housing_median_age",
+              "total_rooms",
+              "total_bedrooms",
+              "population",
+              "households",
+              "median_income"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e4": {
+            "NumberOfTrees": 6,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.95051974,
             "LabelColumnName": "median_house_value",
             "FeatureColumnName": "Features"
           }
@@ -445,7 +433,7 @@
     },
     "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7)",
     "MetricName": "RSquared",
-    "ModelFilePath": "D:\\Programming\\Asp\\AspCore\\v8\\learning-ML\\learning-ML\\Beginner_ML\\MLNetCrashCourse\\MLNetCrashCourseModel.mlnet"
+    "ModelFilePath": "D:\\Programming\\Asp\\AspCore\\v8\\learning-ML\\learning-ML\\Beginner_ML\\MLNetCrashCourse\\MLModel1.mlnet"
   },
   "Type": "TrainingConfig",
   "Version": 5,
