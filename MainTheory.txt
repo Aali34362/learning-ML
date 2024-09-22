@@ -1,0 +1,37 @@
+ML.NET gives you the ability to add machine learning to .NET applications, 
+in either online or offline scenarios. With this capability, 
+you can make automatic predictions using the data available to your application. 
+Machine learning applications make use of patterns in the data to make predictions rather than needing to be explicitly programmed.
+
+Central to ML.NET is a machine learning model. 
+The model specifies the steps needed to transform your input data into a prediction. 
+With ML.NET, you can train a custom model by specifying an algorithm, or you can import pre-trained TensorFlow and ONNX models.
+
+Once you have a model, you can add it to your application to make the predictions.
+
+ML.NET runs on Windows, Linux, and macOS using .NET, or on Windows 
+using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, 
+except for TensorFlow, LightGBM, and ONNX-related functionality.
+
+Prediction type & Example:
+Classification/Categorization : Automatically divide customer feedback into positive and negative categories.
+Regression/Predict continuous values : Predict the price of houses based on size and location.
+Anomaly Detection : Detect fraudulent banking transactions.
+Recommendations : Suggest products that online shoppers may want to buy, based on their previous purchases.
+Time series/sequential data : Forecast the weather or product sales.
+Image classification : Categorize pathologies in medical images.
+Text classification : Categorize documents based on their content.
+Sentence similarity :Measure how similar two sentences are.
+
+Code workflow
+
+The following diagram represents the application code structure, 
+as well as the iterative process of model development:
+
+    Collect and load training data into an IDataView object
+    Specify a pipeline of operations to extract features and apply a machine learning algorithm
+    Train a model by calling Fit() on the pipeline
+    Evaluate the model and iterate to improve
+    Save the model into binary format, for use in an application
+    Load the model back into an ITransformer object
+    Make predictions by calling CreatePredictionEngine.Predict()

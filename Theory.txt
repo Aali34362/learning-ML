@@ -1,0 +1,131 @@
+what is machine learning and ml dotnet machine learning is a learning from the experience and 
+making the a production based on its experience in machine learning
+we need to create a pipeline and a pasture your training data based on that machine will learn how to write on the editor
+
+what is machine learning and how it become popular nowadays machine learning is a subset of the artificial intelligence
+it focuses mainly on machine learning from their experience and make the prediction based on its experience it offers 
+computers capability to learn and act like the human without the being explicitly programmed machine learning algorithms 
+are used in a wide variety of the applications such as computer vision banking market analysis forecasting natural language processing agriculture head domain etc 
+where it is difficult or infeasible to develop a conventional algorithm for effectively performing the task 
+we know human learn from their past experience where mustn't follow the instruction given by the human 
+but using machine learning we can provide an algorithm that mimic common learning in the machine those program and algorithm
+are designed in a way that they learn and improve over the time but are exposed to the new data so they can work like the human with the more accuracy 
+let's understand how we learn as a human 
+if you want to buy the strawberry from the local store then you visit it for the first time you don't have any idea which kind of strawberries 
+are good so you will pick up the any of them after your first watches you come to know that strawberry is having the bright red color 
+or fresh so on the next day when you go for purchasing you will pick up the bright red strawberries then 
+you come to know that medium size strawberry have the more flavor and
+juices compared to the other so on the next day when you go for purchase you will search for the bright red color
+as well as the medium size strawberry and now on the next day instead of strawberry 
+you want to buy a pineapple but here you cannot apply the things that you have learned for the strawberry 
+even bright red pineapple sounds funny you will learn something from the age experience 
+and it will help you in the future decision this is how we as a human learn from the experience machine will also mimic the human
+behavior here are few example of machine learning that you might use daily google or here map 
+we can find the fastest as well as the shortest route for navigation as well as identify the location from the images of a street
+ecommerce sites like the amazon provided a recommendation for the product using the computer vision we can identify 
+the person or object in the image for example facebook display the auto generated caption
+for the images using voice assistant like the alexa cortana siri or google they are using the initial language
+processing for understanding the user's query determine the sentiment of the user's comment or review
+this is a commonly used in the e-commerce site as well as on the twitter outlook or gmail use the algorithm
+to determine the spam or a junk or malicious content the banking sector used the various algorithm 
+to determine the afro transaction based on the transaction location amount or other parameters obert's 
+algorithm is one of the most popular algorithm it will find a gap such that it cost less to the company
+based on the various parameters like the education distance demand etc online advertisement 
+also use this if you have searched for something on your mobile device and open the facebook on the desktop
+then you might see the advertisement of the same product you might hear of the tesla self-driving car 
+it is also based on machine learning google or translator to use the amazon learning to determine the language 
+that you have provided nowaday microsoft team and the skype provide the transcription again it's a machine learning
+many companies use the machine learning to determine demand during a particular time based on several parameters there is a various kind of machine learning algorithm such as a supervised learning unsupervised learning reinforcement learning self-learning future learning sparse dictionary learning and anomaly detection from this list supervised unsupervised and reinforcement for a popular algorithm supervised learning algorithm it build a mathematical model of a set of data that contain the both input and the desired output the supervised
+learning is accurate and very fast the example of these algorithm include the classification regression and structure prediction unsupervised learning algorithm it take the set of data that contain only input and find the structure in the data like grouping or clustering of the editor it mainly using the patent detection the example of unsupervised learning include the key means and a priori algorithm reinforcement learning algorithm this algorithm use the system of reverb and punishment we do not need the labor input or output
+pairs reinforcement learning algorithm or agent learn by interacting with its environment the agent receive the reward by performing the correct and get the penalties for the performing incorrectly safe driving car is the example of this algorithm because machine learning using the lots of application it's still in the starting era because machine learning is using the lots of application it become more popular nowadays however it's still in the starting era all major crowd providers like azure aws and google cloud focuses on their
+machine learning it's supported by the various programming languages like the python r java c c plus plus and javascript with the introduction of the ml.net.net also joined this list there are various tools available for creating a highly efficient learning application with the ease such as a pytorch tensorflow jupyter notebooks h2o some of them are free and some are paid stay tuned for the next session
+
+
+hey there in the previous session we have learned what is machine learning in this session we will see how it's different from the ei and deep learning many people confuse with the artificial intelligence machine learning and deep learning those are terms are different artificial intelligence is a broader concept addressing the use of machines to perform the task considered as a smart the goal is to enhance the chances of their success but not accuracy machine learning is application of the artificial intelligence
+it based on the idea of giving machines access to the data and allow them to learn for themselves the goal is to enhance the accuracy but it does not care about the success so this was about the amazon learning part now coming over to the edit planning it is a subset of the machine learning and his approach to the ai it powered the most human-like ai now i hope that you understood the basic difference between the machine learning ai and deep learning let's see more difference between the machine learning and ai
+as we have seen in the previous slide ai is a proto concept 10ml in ml the machine will take the data and learn from it where ea is a cognitive process that perform their smart work gamma leads to the knowledge where ai leads to the wisdom ml leads to the creation of the self learning algorithm where ai involve the creation of the system that mimic the human behavior and now let's see the difference between the ml and dl camel is a subset of ai and dl is a subset of ml ml algorithms are used to pass data and
+learn from it where in deep learning the algorithm are structured in a layer for the creation of the artificial neural network machine learning uses the small data set compared to the deep learning therefore the planning required the high end configuration machines where machine learning can perform on the normal machine store so you can use the laptop desktop or mac whatever you have machine learning took the less time due to the less size of data where deep learning takes a high time in machine learning we always get the
+numeric value as a result we will learn more about this when we dig overhead in the according where in the deep learning we can pass element free text sound score etc as a result see you in the next lesson
+
+
+
+what is ml dotnet as we have seen in the year previous session by these languages are using the immersive learning most refuser prefer the a Java and Python for these using the.net platform we can build a wide variety of the application including the adesh trough a cloud mobile games IOT microsoft.
+net team came up with the idea of ML dotnet and a big data for artificial intelligence Emma would not kill you ability to add the Emma's in learning in the a.net application we can use both online as well as the offline scenario the model is essential of the Emma's in learning the model specify the estrella finish to transport the user data into the prediction using the ml tonight we can create our own custom model Hema dotnet officially publicly announced on the year build 2019 but Microsoft team internally use it from
+the year 2002 it was already used by the S ever of Microsoft product before public ear arrays using here to ml we can create the model automatically from the a set of data it will automatically choose the algorithm for our data set we do not need to worry about the L go to the manage hyper parameter microsoft also provide the CLI for model building so if you load to work from the console then you can do same thing as a visual show you a my dotnet is the extensible so we can use the models created in the tensor flow infer dotnet
+and onyx model will learn more about this in their later session if you are Dorne developer then you can use the your existing sis and F sub skill to build this model like other things in the door trend nowadays ml dotnet is a free open source and cross-platform I am already available on both dotnet core as well as Theodore net framework for framework it is available for the 32-bit as well as a script for weight but few functionalities like tensorflow light p.m.
+and the onyx is not available for the 32-bit let me open the officer site of Hamel dotnet to understood more about it write it dotnet /m here are some of features that we have seen this is the simple example of creating model and predicting value we will use the SSF throughout this course here is a list of example that we can create with the ML dotnet all of those are available on the github for example let me click on the sentiment analysis here it will open the github repo which contain DSM per we will learn about the almost example by creating it from the
+square throughout this series here is a motor builder that will automatically create a motor built on the other data set this samples were the use of the attends a flow for a computer vision performance or female dotnet also pretty good compared to the a various popular framework and tools here is a list of few customers of famil dotnet obviously its launch failure back so it does not have a long list of third parties but many Microsoft products use it internally Outlook Windows Defender Windows hello power bi is your machine
+learning studio or swimming analysis and many more see you in the next session
+
+
+hey there in the previous session we have learned what is ml.net and it's some features in this session we will set up an environment from ml.net throughout this series i will use the visual studio 2090 preview version 16.5 you can also use the prior version as it does not require the latest visual studio create a new project for now i am going to create a simple console application of dotnet core you can also use the dotnet framework as ml.net packages are support both.
+net core and dotnet framework the project name will be the mln console demo update location and the solution name will be mlnet demo create it within that we will create the several program to understood the sdk to setup the ml.net this we need to add a package from the nougat right click on the project select manage nokia packages search for microsoft.
+ml the current version is 1.5.0 preview too may a time you watch this video might be new version arrive or stable version might be arrived so install that alternatively you can use the a package manager console for this here it contains is some packages for specific functionality like maths data view on x image analysis auto ml vision and many more for now microsoft.
+ml is enough we will add those other packages later as per our requirement
+
+
+
+ml.net sdk able. provide a context name ml context you like the adb context in the entity framework
+it is responsible for all the operation it contains the a singleton object for a catalogues
+a catalog is a judge factory class it is responsible for operation related to the data loading saving transform trainers and models
+data operation catalog is responsible for operation related to the data loading and save model operation catalog is responsible
+for operation related to the model transform catalog provide your various method for preparing the data 
+before processing component catalog is used to register the assembly for the model along with those four catalogs 
+it contains the eight other trainers 
+it includes the binary classification multi-class classification regression 
+cluster ranking forecasting anomaly detection and recommendation those catalog will provide a method 
+for performing the operation related to the respective algorithm in this slide i have provided a method
+name for the first four catalog mentioned in the previous slide the method in the voltex are frequently u
+sed motor operation catalog contains the method for co model load model as well as create 
+a prediction engine data operation catalog contains the loading and saving of the data 
+from the various source filtering shuffling and create a test and training data set transform catalog 
+contains a method for conversation categorization tags and time series manipulation futurise 
+and normalize etc component catalog just have a single
+method it used to register the assembly for the model
+as i said previously the other eight catalog were derived from the drain catalog 
+each shrink catalog provider method or property for cross validation evolution trainers and 
+permutation future importance if you are confused about this session
+then it's okay we will learn each of the catalog as well as the almost method mentioned here
+in the step-by-step example stay tuned for the next lesson
+
+
+hello guys welcome to the a7 session in this session we will see the simple flow of ml.net application the first step will be create an instance of emerald context without this we cannot perform further operations after creating context we need to load the training data set based on which our model will be trained sometimes we need to process the several operation before giving the data into the model because sometimes we load the raw data and we need to perform the several operations like the conversation transformation etc
+then we need to create a pipeline for model using this we can specify which kind of trainer we need to use which algorithm will be used to prepare the model after creating pipeline we need to feed the training dataset to create the model after creating the model we need to evaluate its performance for this we need to provide a test data set there might be possibility that our model does not work properly if the accuracy is low then we need to check for the data that we have provided in the training as well as the algorithm
+and its hyper parameter that we have specified if model performing well then we can continue we can also save the model so that we can share it with the other application and we does not want to generate it again and again to predict data we need to create a production engine for that model using prediction engine we can provide here some input based on which we want to get the prediction value this is ideal flow for the machine learning but we can also skip this several steps like you may not need to pre-process the
+editor save more or even evaluate the model stay tuned for the next lesson
+
+
+
+terminology in machine learning and the specific terms of the ml.net 2. 
+it would be great to understand those terminology before vdd vd governing the accord 
+the first term is model in terms of machine learning it is 
+a train model which is expected to perform the some intelligent stuff 
+next is pipeline pipeline represent the steps of operation that used to generate the model using pipeline 
+we can pre-process the data and add the trainer within it
+data data is a central of machine learning because the model will train based on the editor 
+so we need to provide the proper data means it should include all kind of data training 
+training is a process of identifying a model for given training data set feature feature represent a field 
+that used as an input in the model label level represent a field that we want to predict catalog in the ml.net 
+a catalog is a collection of the extensive methods grouped by the common purpose we have already learned about all catalogs supported by my.net 
+in the ml.net model implement the i transformer interface so model also known as the transformer in ml.net pipelines are implement the i estimator interface so pipeline is also known as the estimator data view data in ml.
+net represent by instance of the i data view it contains the data in a row and column manner just like the a data table data view is a lazy evolution this means it does not perform the operation immediately so it's just like the i enumerable enamel.net trainer is algorithm that performs the operation on our data for generating model hyper parameter it is an additional parameter that we can pass through the trainer for configuring algorithm calibration very strainers map score into the column name probability few trainer does not calculate their
+probability so those trainer are suffix with a non-calibrated using production engine we can provide here some input based on which we will get the prediction of that value evolution evaluation is a process of identifying the accuracy of the our model if it is not performing well then we need to make the changes in the pipeline trainer hyper parameter or even data itself those are a few terminologies that will be useful in there for the session we will dig our hair in the according from the session 10. stay tuned for the
+
+
+
+hello in this section we have learned about the machine learning and how it's different from the artificial intelligence and deep learning then we have seen there what is ml.net and its features then we have created a new console app for a.net core within that we have added the nougat package for microsoft.
+ml then we have explored the sdk of the aml.net learn about its catalog also we have seen the idle flow of the machine learning application in the end we have seen the some terminology specific to the ml and ml.net goodbye
+
+
+hello guys welcome to the a10 session in this session we will create a buffer program using gmail.net for its session i will create a new folder so you can easily address it if you have any issue or a doubt let me create a folder for sentence create a new class name demo within that create a new method that will be executed from the program.
+cs file so we need to create it aesthetic write public study quite execute as said previously in ml.net everything is around the ml context so we need to create an instance of the ml contacts i have a plugin which will automatically add the missing name space we can also pass the optional value for the seed parameter using this parameter we can save the some value that will be used across the multiple training i am not specifying it so it will take here random value every time in this session we will create a simple
+model for predicting salary of an employee based on the number of year of experience i know in the real world experience is not only criteria but there are also several other criteria that will be considered for the salary but here i want to make those examples simple as possible so we are going to just consider experience only now we need to load the editor for this we need to create a poco model create a new class input model add a property for float years of experience and float salary in this session we will load data from
+the innumerable for this i have already created list of input model so let me paste it here i have freed some data from the one year experience to the nine-year experience you can add more data too let me collapse this for the better visibility now we have data we need to load it for this we need to use the context.
+data and we have data in the numerable so we need to use load from enumerable now we need to prepare this data create a estimator use the context.transforms now we need to specify the features for our input features are the data that algorithm will check in our example only years of experience is a feature so use the concat method and the specify feature as output column name and array containing gears of experience as input column name now we need to create a pipeline we need to append it on the estimator we want to perform the regression task
+and want to specify the trainer here you can see that it shows the list of algorithm that is supported by the regression task lbfgs positional regression online gradient descent and sdca those are the standard training algorithm we can also add the some additional trainer algorithm by storing your respective nougat package for now we will continue with the sdca it stands for stochastic dual coordinate ascent matter it is one of the popular algorithm for regression it take these error parameters commonly use the parameter label column
+name using which we can specify the label for our data a label name is the name of the column that we are going to predict for this example it would be a salary the next is feature column name let's specify the column name from which model will be predicting a value in our case it's the features not the years of experience during preprocessing data we have concatenated the column into the name feature column name for the weightage loss function value for l1 and l2 regularization and maximum number of filtration all
+those parameters have the default values so it's optional to pass the value for those or parameter let me pass the salary in the label column name and set maximum number of iteration to 100 here i am not passing the value for features column name as the default value is the features and now we have the pipeline we need to create a model for this we need to use the fit method of the pipeline within that we need to pass the training data for this example i am not going to evaluate the model so directly create the prediction engine
+for this use the context dot model dot create prediction engine method in the generic parameter we need to specify the type of input as well as the error response input will be input model and output will be a result model and pass the model that we have created we have already created input model but we need to create the result model class create a new class name result model it just contain the single property that represent the predicted salary so i am using the salary as a name however data written by this algorithm
+will be named score so we can change this property name to the score instead of this i am going to use the column name attribute on this property and specify the name will be score create an instance of the input model with the 5 year of experience let's obtain the result using the predict method of the production engine and print approx salary for years of experience will be salary now we have class that will create a model as well as perform the prediction based on it
+but we need to execute this method from the program.cs call the assassin 10 demo execute method save all the file and run the project here we got the approx 73 000 for the five year of experience and let me change to the attenua execute it again here you can see that we got around 1 lakh 20 000 as per the sdca algorithm let's see what we have learned in this session in this session we have created a simple demo of the regression task for this we have loaded the data from the enumeration concat all fills into the feature
+specify the sdc as a trainer within that specify the label and number of iteration after this we have created a model and freezer training data set create production engine and predict salary for the 5 year and 10 year of experience here are input and result model that we have created not that i have not made any of class size public as i will follow the same folder structure and naming convention for the further session so it does not generate the any issue stay tuned for the next lesson

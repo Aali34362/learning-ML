@@ -1,6 +1,6 @@
 ﻿using Microsoft.ML.Data;
 
-namespace MLNetCrashCourse;
+namespace MLNetCrashCourse.Model;
 
 internal class HousingData
 {
