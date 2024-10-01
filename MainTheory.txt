@@ -36,6 +36,99 @@ as well as the iterative process of model development:
     Load the model back into an ITransformer object
     Make predictions by calling CreatePredictionEngine.Predict()
 
+Machine learning model:
+An ML.NET model is an object that contains transformations to perform on your input data to arrive at the predicted output.
+
+Basic:
+The most basic model is two-dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example above.
+
+More complex
+A more complex model classifies financial transactions into categories using the transaction text description.
+Each transaction description is broken down into a set of features by removing redundant words and characters, 
+and counting word and character combinations. 
+The feature set is used to train a linear model based on the set of categories in the training data.
+The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category.
+
+In most cases, the data that you have available isn't suitable to be used directly to train a machine learning model. 
+The raw data needs to be prepared, or pre-processed, before it can be used to find the parameters of your model.
+Your data may need to be converted from string values to a numerical representation. 
+You might have redundant information in your input data. 
+You may need to reduce or expand the dimensions of your input data. 
+Your data might need to be normalized or scaled.
+
+The ML.NET tutorials teach you about different data processing pipelines for text, image, numerical, 
+and time-series data used for specific machine learning tasks.
+
+
+Model evaluation
+
+Once you have trained your model, how do you know how well it will make future predictions? With ML.NET, 
+you can evaluate your model against some new test data.
+Each type of machine learning task has metrics used to evaluate the accuracy and precision of the model against the test data set.
+The evaluation metrics tell you that the error is low-ish, and that correlation between the predicted output and the test output is high. 
+That was easy! In real examples, it takes more tuning to achieve good model metrics.
+
+ML.NET architecture:
+This section describes the architectural patterns of ML.NET. 
+If you're an experienced .NET developer, some of these patterns will be familiar to you, and some will be less familiar.
+An ML.NET application starts with an MLContext object. This singleton object contains catalogs.
+A catalog is a factory for data loading and saving, transforms, trainers, and model operation components.
+Each catalog object has methods to create the different types of components.
+
+Task ->	Catalog
+Data loading and saving ->	DataOperationsCatalog
+Data preparation ->	TransformsCatalog
+Binary classification ->	BinaryClassificationCatalog
+Multiclass classification ->	MulticlassClassificationCatalog
+Anomaly detection ->	AnomalyDetectionCatalog
+Clustering ->	ClusteringCatalog
+Forecasting ->	ForecastingCatalog
+Ranking ->	RankingCatalog
+Regression v	RegressionCatalog
+Recommendation ->	RecommendationCatalog
+Time series ->	TimeSeriesCatalog
+Model usage ->	ModelOperationsCatalog
+
+
+Build the pipeline:
+Inside each catalog is a set of extension methods that you can use to create a training pipeline.
+Concatenate and Sdca are both methods in the catalog. 
+They each create an IEstimator object that's appended to the pipeline.
+At this point, the objects have been created, but no execution has happened.
+
+Train the model:
+Once the objects in the pipeline have been created, data can be used to train the model.
+Calling Fit() uses the input training data to estimate the parameters of the model. 
+This is known as training the model. Remember, the linear regression model shown earlier had two model parameters: bias and weight. 
+After the Fit() call, the values of the parameters are known.
+The resulting model object implements the ITransformer interface. 
+That is, the model transforms input data into predictions.
+
+Use the model:
+You can transform input data into predictions in bulk, or one input at a time. 
+The house price example did both: in bulk for the purpose of evaluating the model, and one at a time to make a new prediction. 
+var size = new HouseData() { Size = 2.5F };
+var predEngine = mlContext.CreatePredictionEngine<HouseData, Prediction>(model);
+var price = predEngine.Predict(size);
+The CreatePredictionEngine() method takes an input class and an output class. 
+The field names or code attributes determine the names of the data columns used during model training and prediction. 
+
+Data models and schema:
+At the core of an ML.NET machine learning pipeline are DataView objects.
+Each transformation in the pipeline has an input schema 
+(data names, types, and sizes that the transform expects to see on its input); 
+and an output schema (data names, types, and sizes that the transform produces after the transformation).
+If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
+A data view object has columns and rows. 
+Each column has a name and a type and a length. 
+For example, the input columns in the house price example are Size and Price. 
+They are both type and they are scalar quantities rather than vector ones. 
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+GPT
+
 MLContext : 
 The MLContext class in ML.NET is the main entry point for interacting with all machine learning operations, 
 including data loading, transformation, model training, evaluation, and deployment. 
@@ -151,3 +244,118 @@ Best Practices with MLContext
     Thread Safety: The MLContext object is thread-safe, so you can share it across multiple threads in your application.
 
 
+--------------
+IDataView:
+IDataView is the primary data structure used in ML.NET for data manipulation and processing. 
+It is an efficient, lazy-loading, columnar format designed to handle large datasets that might not fit in memory all at once. 
+It abstracts data in a way that allows for efficient transformations and machine learning operations, 
+without eagerly loading all data into memory. 
+Here's an in-depth explanation of IDataView, its role, what LoadFromEnumerable does, 
+and other supported formats and methods to work with data in ML.NET:
+1. What is IDataView?
+IDataView is similar to a table in a relational database. It provides a schema (like column names and types) and the actual data. 
+It is designed to handle datasets that are too large to fit in memory by operating in a streaming fashion.
+Schema: Defines the column names and their types (e.g., TextColumn as string and Label as bool). 
+Data: The actual data rows, accessed lazily (i.e., not loaded into memory all at once). 
+IDataView is immutable and read-only, meaning you can't change its contents once created, 
+but you can apply transformations to produce new IDataView instances.
+
+2. What Does Data.LoadFromEnumerable Do? 
+The LoadFromEnumerable method converts an in-memory collection of objects (like a List<T>) into an IDataView object. 
+This is useful when you already have data loaded in memory 
+(e.g., from an external source like a JSON file, a database query, or manually created data).
+
+This code performs the following steps: 
+Infers the Schema: 
+Reads the properties from the HouseData class and creates columns in the IDataView corresponding to those properties. 
+Lazily Loads the Data: 
+The data from the houseData list is not loaded into memory immediately. 
+Instead, IDataView wraps it in a streaming manner so that the data is processed as needed (e.g., during training or transformations).
+
+3. Other Ways to Create and Load Data into IDataView
+ML.NET supports various methods for loading data into IDataView beyond LoadFromEnumerable. 
+Here are the most commonly used ones:
+a) Loading from a CSV or Text File
+The LoadFromTextFile method is used to load data from a CSV or text file into an IDataView. 
+This method requires specifying a schema or using attributes like [LoadColumn] in a class to map columns.
+
+IDataView dataView = mlContext.Data.LoadFromTextFile<ModelInput>(
+    path: "data.csv",
+    hasHeader: true,
+    separatorChar: ','
+);
+
+This method performs the following operations:
+    Infers the Schema: Reads the first line (if hasHeader is true) and creates columns based on the structure of the file.
+    Lazy Loading: Similar to LoadFromEnumerable, LoadFromTextFile loads rows on-demand, making it memory efficient for large files.
+
+b) Loading from a Database
+ML.NET supports loading data directly from a relational database like SQL Server. 
+The DatabaseLoader is used to read data from tables or views in a SQL database and convert it into an IDataView.
+
+// Define a database loader.
+var loader = mlContext.Data.CreateDatabaseLoader<ModelInput>();
+
+// Define a connection string and SQL command.
+string connectionString = "Server=.;Database=SampleDB;Integrated Security=true";
+string sqlCommand = "SELECT * FROM HouseData";
+
+// Load data from database.
+IDataView dataView = loader.Load(new DatabaseSource(connectionString, sqlCommand));
+
+This allows you to work with large datasets directly in the database without having to load the entire table into memory.
+
+c) Loading from In-Memory Collections
+If you have in-memory data, you can use LoadFromEnumerable as shown above.
+
+List<ModelInput> inputData = new List<ModelInput> { ... };
+IDataView dataView = mlContext.Data.LoadFromEnumerable(inputData);
+
+d) Loading from Binary Format
+If you have a large dataset that you want to save and reload multiple times (e.g., during development),
+you can serialize it into a binary format using the Save and Load methods:
+
+// Save IDataView to a binary file
+using (var fileStream = new FileStream("data.idv", FileMode.Create))
+{
+    mlContext.Data.SaveAsBinary(trainingData, fileStream);
+}
+
+// Load IDataView from a binary file
+IDataView loadedDataView;
+using (var stream = new FileStream("data.idv", FileMode.Open))
+{
+    loadedDataView = mlContext.Data.LoadFromBinary(stream);
+}
+
+This is useful for speeding up data loading when working with large datasets.
+
+e) Manual Creation using DataViewBuilder
+You can create an IDataView manually using the DataViewBuilder class. 
+This approach is useful when you want to create a small test dataset directly in code.
+
+var builder = new DataViewBuilder(mlContext);
+builder.AddColumn("Size", NumberType.Float, new float[] { 1.1f, 2.5f, 3.3f });
+builder.AddColumn("Price", NumberType.Float, new float[] { 100000, 200000, 300000 });
+IDataView dataView = builder.Build();
+
+This approach provides a flexible way to create IDataView for small data samples or tests.
+
+4. Other Formats to Work with Data
+In addition to the above methods, ML.NET provides other options for working with data, such as:
+TextLoader: 
+For more fine-grained control over text file loading, especially when the schema is complex or requires special handling of missing values or delimiters.
+JSON Files: 
+While there's no direct method to load JSON into IDataView, you can first read the JSON file into an in-memory collection and then use LoadFromEnumerable.
+Azure Storage: 
+You can read data directly from Azure Blob Storage using the appropriate data connectors.
+
+5. Modifications Made by LoadFromEnumerable
+LoadFromEnumerable creates an IDataView object, which provides the following modifications:
+Schema Inference: 
+LoadFromEnumerable infers the schema based on the types and properties of the input class (e.g., ModelInput).
+Lazy Loading: 
+Data is not fully loaded into memory. Instead, IDataView references the original collection, allowing for large datasets to be processed efficiently.
+Type Conversion: 
+If the properties in the class have types that are not directly supported by IDataView (e.g., nullable types), 
+LoadFromEnumerable will handle conversions where possible.
