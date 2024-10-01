@@ -359,3 +359,145 @@ Data is not fully loaded into memory. Instead, IDataView references the original
 Type Conversion: 
 If the properties in the class have types that are not directly supported by IDataView (e.g., nullable types), 
 LoadFromEnumerable will handle conversions where possible.
+
+
+--------------
+Why Do We Create a Pipeline?
+A pipeline in ML.NET is a series of data transformations and machine learning algorithms 
+applied in a specific order to process the input data and produce the desired output (such as predictions). 
+
+Pipelines allow you to:
+    Chain multiple data processing and training steps together.
+    Ensure that data transformations applied during training are also used during prediction.
+    Simplify the code by abstracting repetitive tasks and making it easy to update or reuse.
+    Improve maintainability by separating the data preparation steps from model training.
+
+2. What is Transforms?
+Transforms is a collection of methods provided by ML.NET that allow you to transform, manipulate, 
+or preprocess the input data. 
+These transformations could include tasks such as normalization, data type conversion, text processing, feature extraction, or column manipulation.
+Each method in Transforms is designed to modify the input data in some way, producing a new 
+IDataView object that can then be passed to the next stage in the pipeline.
+
+Examples of transformations include:
+    Concatenate: Combines multiple columns into a single feature vector.
+    Normalize: Scales numeric values to a standard range (e.g., 0 to 1).
+    OneHotEncoding: Converts categorical variables into a numeric form that machine learning models can work with.
+    Text Featurization: Converts text data into numeric feature vectors using methods like tokenization, word embedding, and more.
+
+3. What is .Concatenate()?
+The Concatenate() transformation is used to merge multiple columns into a single column named "Features".
+Most ML algorithms in ML.NET expect a single feature column (named "Features" by convention), which contains all the input features needed for training.
+
+Example:
+If you have multiple columns like Size and Rooms, you can concatenate them into a single column called Features:
+mlContext.Transforms.Concatenate("Features", new[] { "Size", "Rooms" })
+
+This will produce a single column Features that contains the combined values of the specified columns.
+
+In your example:
+mlContext.Transforms.Concatenate("Features", new[] { "Size" })
+
+Since you are only using one column Size, the Concatenate step is not strictly necessary, 
+but it's often used for uniformity in the pipeline when you have more features.
+
+4. Why and What Do We Append?
+The .Append() method is used to add more steps to the pipeline. 
+This could include additional transformations or the machine learning algorithm itself.
+
+In ML.NET, each transformation or algorithm in the pipeline produces a new IDataView,
+which is passed to the next stage in the pipeline. Using .Append(), you can add:
+    Transformations: Such as normalization or text featurization.
+    Trainers: The machine learning algorithm used to train the model.
+
+In your example:
+
+.Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
+
+You are appending a trainer (Sdca), which is a regression algorithm, to the pipeline.
+
+
+5. What is .Regression?
+.Regression is a property of the mlContext object that provides access to regression-specific trainers. 
+Regression is a type of machine learning problem where the output is a continuous value (e.g., predicting the price of a house).
+
+ML.NET provides different machine learning task categories, such as:
+    mlContext.Regression: For regression tasks.
+    mlContext.BinaryClassification: For binary classification tasks (e.g., spam vs. not spam).
+    mlContext.MulticlassClassification: For multiclass classification tasks (e.g., predicting categories like small, medium, or large).
+    mlContext.Clustering: For clustering tasks (e.g., customer segmentation).
+
+6. What is .Trainers?
+.Trainers is a property inside the 
+.Regression, 
+.BinaryClassification, 
+.MulticlassClassification, 
+and other task-specific properties that provides access to various machine learning algorithms, also called "trainers."
+These trainers are used to train a model on the input data using different techniques.
+
+7. What is .Sdca?
+.Sdca stands for Stochastic Dual Coordinate Ascent. 
+It is an efficient and scalable optimization algorithm used for training regression and classification models. 
+The .Sdca method in ML.NET is part of the Trainers property under mlContext.Regression and other task-specific properties.
+
+In your code:
+mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100)
+
+This line specifies:
+    Algorithm: SDCA for regression.
+    Label Column: Price, which is the target variable.
+    Number of Iterations: The number of times the algorithm will iterate over the data to optimize the model.
+
+8. Are There Other Types of mlContext.Regression.Trainers.Sdca()?
+Yes, ML.NET provides multiple trainers for each task (regression, classification, clustering, etc.). Here are some of the other commonly used trainers:
+
+Regression Trainers:
+
+    Sdca: Stochastic Dual Coordinate Ascent, a good choice for general-purpose regression.
+    LbfgsPoissonRegression: For Poisson regression, typically used when the target is a count (e.g., number of events).
+    FastTree: A gradient boosting decision tree algorithm.
+    FastForest: An ensemble of decision trees for regression.
+    OnlineGradientDescent: A basic linear regression algorithm that updates weights for each sample.
+    Gam: Generalized Additive Model, useful for non-linear regression.
+
+Binary Classification Trainers:
+
+    SdcaLogisticRegression: Logistic regression using the SDCA optimization method.
+    AveragedPerceptron: A simple linear model.
+    FastTree: Gradient boosted trees for binary classification.
+    LightGbm: LightGBM for efficient and fast tree-based learning.
+    SgdCalibrated: Stochastic gradient descent with calibration for binary classification.
+
+Multiclass Classification Trainers:
+
+    SdcaMaximumEntropy: A variant of the SDCA algorithm for multiclass classification.
+    LightGbm: LightGBM for multiclass classification.
+    LbfgsMaximumEntropy: A multiclass logistic regression model.
+
+Clustering Trainers:
+
+    KMeans: K-means clustering algorithm for grouping data into clusters.
+
+Recommendation Trainers:
+
+    MatrixFactorization: For recommendation tasks (e.g., user-item recommendations).
+
+Each of these trainers has different properties and hyperparameters that can be tuned based on the problem you're solving and the dataset characteristics.
+Putting It All Together
+
+The pipeline you provided:
+
+var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
+    .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
+
+    Step 1: Concatenate - Creates a Features column that holds the Size feature.
+    Step 2: Append - Adds the Sdca trainer to the pipeline, specifying that we want to predict the Price column 
+            using Size as a feature, with up to 100 iterations of the algorithm.
+
+This pipeline can then be used to train a model with:
+var model = pipeline.Fit(trainingData);
+
+And used to make predictions with:
+var predictions = model.Transform(testData);
+
+Would you like to see more specific examples or learn more about a particular part of the pipeline?
