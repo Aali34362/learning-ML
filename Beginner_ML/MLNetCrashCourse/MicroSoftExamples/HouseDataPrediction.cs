@@ -51,8 +51,20 @@ public static class HouseDataPrediction
         var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
             .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
 
+        //*
+        var testHouseDataView = mlContext.Data.LoadFromEnumerable(houseData);
+
+
         // 3. Train model
-        var model = pipeline.Fit(trainingData);
+        ////var model = pipeline.Fit(trainingData);
+
+        //*
+        ////var testPriceDataView = model.Transform(testHouseDataView);
+        ////var metrics = mlContext.Regression.Evaluate(testPriceDataView, labelColumnName: "Price");
+        ////Console.WriteLine($"R^2: {metrics.RSquared:0.##}");
+        ////Console.WriteLine($"Mean Absolute Error: {metrics.MeanAbsoluteError:#.##}");
+        ////Console.WriteLine($"Mean Squared Error: {metrics.MeanSquaredError:#.##}");
+        ////Console.WriteLine($"Root Mean Squared Error: {metrics.RootMeanSquaredError:#.##}");
 
         // 4. Make a prediction
         var size = new HouseData() { Size = 2.5F };

@@ -18,6 +18,7 @@ public static class LbfgsPoissonRegressionSet
         string fullName = f.FullName;
         var fileDir = f.Directory!.Parent!.Parent!.Parent;
         string dir = System.IO.Directory.GetCurrentDirectory();
+        //string rootPath = AppDomain.CurrentDomain.BaseDirectory;
         #endregion
 
         var data = context.Data.LoadFromTextFile<HousingData>(fileDir + "\\housing.csv", hasHeader: true, separatorChar: ',');
