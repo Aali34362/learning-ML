@@ -52,11 +52,11 @@ public static class HouseDataPrediction
             .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
 
         //*
-        var testHouseDataView = mlContext.Data.LoadFromEnumerable(houseData);
+        ////var testHouseDataView = mlContext.Data.LoadFromEnumerable(houseData);
 
 
         // 3. Train model
-        ////var model = pipeline.Fit(trainingData);
+        var model = pipeline.Fit(trainingData);
 
         //*
         ////var testPriceDataView = model.Transform(testHouseDataView);
