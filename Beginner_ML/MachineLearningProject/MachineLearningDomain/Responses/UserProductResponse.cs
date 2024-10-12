@@ -1,5 +1,11 @@
-﻿namespace MachineLearningDomain.Responses;
+﻿using MachineLearningDomain.Base;
 
-public class UserProductResponse
+namespace MachineLearningDomain.Responses;
+
+public class UserProductResponse : BaseResponse
 {
+    public int UserId { get; set; }
+    public int ProductId { get; set; }
+    public float ProductRating { get; set; }
+    public int ProductCategory { get; set; }
 }
