@@ -1,4 +1,5 @@
-﻿using StackExchange.Redis;
+﻿using MongoDB.Bson.IO;
+using StackExchange.Redis;
 using System.Text.Json;
 using RedisDatabase = StackExchange.Redis.IDatabase;
 
@@ -31,9 +32,9 @@ public class RedisCacheDatabaseFactory : IDatabaseFactory
         throw new NotImplementedException();
     }
 
-    public Task DeleteAsync<TEntity>(object id) where TEntity : class
+    public async Task DeleteAsync<TEntity>(object id) where TEntity : class
     {
-        throw new NotImplementedException();
+        await _cache.KeyDeleteAsync(id.ToString());
     }
 
     public Task DeleteListAsync<TEntity>(List<object> ids) where TEntity : class
@@ -41,11 +42,11 @@ public class RedisCacheDatabaseFactory : IDatabaseFactory
         throw new NotImplementedException();
     }
 
-    
-
-    public Task UpdateAsync<TEntity>(TEntity entity) where TEntity : class
+    public async Task UpdateAsync<TEntity>(TEntity entity) where TEntity : class
     {
-        throw new NotImplementedException();
+        var id = entity.GetType().GetProperty("Id")?.GetValue(entity)!.ToString();
+        var json = JsonSerializer.Serialize(entity);
+        await _cache.StringSetAsync(id, json);
     }
 
     public Task UpdateListAsync<TEntity>(List<TEntity> entity) where TEntity : class
