@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineLearningMigration", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineLearningDataBaseFactory", "Beginner_ML\MachineLearningProject\MachineLearningDataBaseFactory\MachineLearningDataBaseFactory.csproj", "{C1636419-67B0-4F49-822A-E0AFD19BD5FD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroSoftExample", "MicroSoftExample", "{6F03AB0E-CEAC-4727-807D-17BE1067E4E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedTaxiFarePrediction", "MicroSoftExample\AdvancedTaxiFarePrediction\AdvancedTaxiFarePrediction.csproj", "{38AE0ABA-D945-40E2-A05E-D187B9DA708A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +81,10 @@ Global
 		{C1636419-67B0-4F49-822A-E0AFD19BD5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1636419-67B0-4F49-822A-E0AFD19BD5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1636419-67B0-4F49-822A-E0AFD19BD5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AE0ABA-D945-40E2-A05E-D187B9DA708A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AE0ABA-D945-40E2-A05E-D187B9DA708A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AE0ABA-D945-40E2-A05E-D187B9DA708A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AE0ABA-D945-40E2-A05E-D187B9DA708A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +101,7 @@ Global
 		{F51F9772-29A1-48D1-8C0A-7D3AA6127657} = {A870D251-C540-4C61-A50C-C5B1B4D19B9D}
 		{66DD9605-5326-4AE9-9616-115F67B483FE} = {A870D251-C540-4C61-A50C-C5B1B4D19B9D}
 		{C1636419-67B0-4F49-822A-E0AFD19BD5FD} = {A870D251-C540-4C61-A50C-C5B1B4D19B9D}
+		{38AE0ABA-D945-40E2-A05E-D187B9DA708A} = {6F03AB0E-CEAC-4727-807D-17BE1067E4E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}
