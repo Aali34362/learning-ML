@@ -11,11 +11,26 @@ using Microsoft.ML;
 using Microsoft.ML.AutoML;
 using Microsoft.ML.Data;
 using PLplot;
+using Tensorflow.Contexts;
 
 namespace AdvancedTaxiFarePrediction
 {
     internal static class Program
     {
+
+        ////#region File Location
+        ////string fileName = "housing.csv";
+        ////FileInfo f = new FileInfo(fileName);
+        ////string fullName = f.FullName;
+        ////var fileDir = f.Directory!.Parent!.Parent!.Parent;
+        ////string dir = System.IO.Directory.GetCurrentDirectory();
+        //////string rootPath = AppDomain.CurrentDomain.BaseDirectory;
+        ////#endregion
+
+        ////var data = context.Data.LoadFromTextFile<HousingData>(fileDir + "\\housing.csv", hasHeader: true, separatorChar: ',');
+
+
+
         private static string BaseDatasetsRelativePath = "Data";
 
         private static string TrainDataRelativePath = $"{BaseDatasetsRelativePath}/taxi-fare-train.csv";
@@ -34,6 +49,17 @@ namespace AdvancedTaxiFarePrediction
 
         public static void Main(string[] args) //If args[0] == "svg" a vector-based chart will be created instead a .png chart
         {
+            string trainData = "taxi-fare-train.csv";
+            FileInfo ftrainData = new FileInfo(trainData);
+            var fileDirtrainData = ftrainData.Directory!.Parent!.Parent!.Parent;
+            TrainDataPath = fileDirtrainData.ToString();
+
+            string testData = "taxi-fare-test.csv";
+            FileInfo ftestData = new FileInfo(testData);
+            var fileDirtestData = ftestData.Directory!.Parent!.Parent!.Parent;
+            TestDataPath = fileDirtestData.ToString();
+
+
             var mlContext = new MLContext();
 
             // Infer columns in the dataset with AutoML.
