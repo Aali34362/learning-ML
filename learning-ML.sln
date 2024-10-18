@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SsaSpikeEstimator", "SsaSpi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SrEntireDetection", "MicroSoftExample\SsaSpikeEstimator\SrEntireDetection\SrEntireDetection.csproj", "{A9812FB2-7FB0-4428-B85D-A119EF3D7B12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardFraudDetection", "MicroSoftExample\SsaSpikeEstimator\CreditCardFraudDetection\CreditCardFraudDetection.csproj", "{2FCA8725-FF47-427A-B649-65CC80F9E212}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{A9812FB2-7FB0-4428-B85D-A119EF3D7B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9812FB2-7FB0-4428-B85D-A119EF3D7B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9812FB2-7FB0-4428-B85D-A119EF3D7B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCA8725-FF47-427A-B649-65CC80F9E212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCA8725-FF47-427A-B649-65CC80F9E212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCA8725-FF47-427A-B649-65CC80F9E212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCA8725-FF47-427A-B649-65CC80F9E212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{38AE0ABA-D945-40E2-A05E-D187B9DA708A} = {6F03AB0E-CEAC-4727-807D-17BE1067E4E6}
 		{5B082539-E54B-4C5D-9135-13D3469CE6E5} = {6F03AB0E-CEAC-4727-807D-17BE1067E4E6}
 		{A9812FB2-7FB0-4428-B85D-A119EF3D7B12} = {5B082539-E54B-4C5D-9135-13D3469CE6E5}
+		{2FCA8725-FF47-427A-B649-65CC80F9E212} = {5B082539-E54B-4C5D-9135-13D3469CE6E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}

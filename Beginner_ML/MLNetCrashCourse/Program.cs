@@ -2,13 +2,13 @@
 using MLNetCrashCourse.ModelChoice;
 using MLNetCrashCourse.TutorialsTeam;
 
-////LbfgsPoissonRegressionSet.LbfgsPoissonRegressionMain();
+LbfgsPoissonRegressionSet.LbfgsPoissonRegressionMain();
 
-////SdcaSet.SdcaSetMain();
+SdcaSet.SdcaSetMain();
 
-////Demo.Execute();
+Demo.Execute();
 
-////HouseDataPrediction.HouseDataPredictionMain();
+HouseDataPrediction.HouseDataPredictionMain();
 
-//DataPrediction.DataPredictionMain();
+DataPrediction.DataPredictionMain();
 
