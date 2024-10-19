@@ -1,4 +1,4 @@
-﻿using CreditCardFraudDetection.Common;
+﻿using Common;
 
 namespace CreditCardFraudDetection.Predictors;
 
