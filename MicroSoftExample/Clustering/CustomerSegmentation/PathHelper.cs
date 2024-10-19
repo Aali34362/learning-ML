@@ -20,5 +20,4 @@ public static class PathHelper
             File.Delete(location);
         return location;
     }
-
 }

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Common;
+namespace CommonLib;
 
 public class Web
 {

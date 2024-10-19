@@ -1,9 +1,8 @@
-﻿using Common;
+﻿using CommonLib;
 using CustomerSegmentation.DataStructures;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using Microsoft.ML.Transforms;
-using System.IO;
 
 namespace CustomerSegmentation;
 
@@ -12,7 +11,7 @@ public static class TrainProgram
     public static void TrainProgramMain()
     {
         string assetsRelativePath = @"\TrainData";
-        string assetsPath = GetAbsolutePath(assetsRelativePath);
+        string assetsPath = PathFind.GetAbsolutePath(assetsRelativePath);
 
         string transactionsCsv = Path.Combine(assetsPath, "inputs", "transactions.csv");
         string offersCsv = Path.Combine(assetsPath, "inputs", "offers.csv");
@@ -43,8 +42,8 @@ public static class TrainProgram
 
 
             // (Optional) Peek data in training DataView after applying the ProcessPipeline's transformations
-            Common.ConsoleHelper.PeekDataViewInConsole(mlContext, pivotDataView, dataProcessPipeline, 10);
-            Common.ConsoleHelper.PeekVectorColumnDataInConsole(mlContext, "Features", pivotDataView, dataProcessPipeline, 10);
+            ConsoleHelper.PeekDataViewInConsole(mlContext, pivotDataView, dataProcessPipeline, 10);
+            ConsoleHelper.PeekVectorColumnDataInConsole(mlContext, "Features", pivotDataView, dataProcessPipeline, 10);
 
             //STEP 3: Create the training pipeline
             var trainer = mlContext.Clustering.Trainers.KMeans(featureColumnName: "Features", numberOfClusters: 3);
@@ -68,14 +67,8 @@ public static class TrainProgram
         }
         catch (Exception ex)
         {
-            Common.ConsoleHelper.ConsoleWriteException(ex.ToString());
+            ConsoleHelper.ConsoleWriteException(ex.ToString());
         }
 
-    }
-    public static string GetAbsolutePath(string relativePath)
-    {
-        FileInfo _dataRoot = new FileInfo(typeof(Program).Assembly.Location);
-        string assemblyFolderPath = _dataRoot.Directory!.Parent!.Parent!.Parent!.FullName;        
-        return $"{assemblyFolderPath}{relativePath}"; 
     }
 }

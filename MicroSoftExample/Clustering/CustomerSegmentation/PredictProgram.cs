@@ -1,4 +1,5 @@
-﻿using CustomerSegmentation.Model;
+﻿using CommonLib;
+using CustomerSegmentation.Model;
 using Microsoft.ML;
 
 namespace CustomerSegmentation;
@@ -8,7 +9,7 @@ public static class PredictProgram
     public static void PredictProgramMain()
     {
         var assetsRelativePath = @"\PredictData";
-        string assetsPath = GetAbsolutePath(assetsRelativePath);
+        string assetsPath = PathFind.GetAbsolutePath(assetsRelativePath);
 
         var pivotCsv = Path.Combine(assetsPath, "inputs", "pivot.csv");
         var modelPath = Path.Combine(assetsPath, "inputs", "retailClustering.zip");
@@ -27,17 +28,8 @@ public static class PredictProgram
         }
         catch (Exception ex)
         {
-            Common.ConsoleHelper.ConsoleWriteException(ex.ToString());
+            ConsoleHelper.ConsoleWriteException(ex.ToString());
         }
-
-        Common.ConsoleHelper.ConsolePressAnyKey();
-
+        ConsoleHelper.ConsolePressAnyKey();
     }
-    public static string GetAbsolutePath(string relativePath)
-    {
-        FileInfo _dataRoot = new FileInfo(typeof(Program).Assembly.Location);
-        string assemblyFolderPath = _dataRoot.Directory!.Parent!.Parent!.Parent!.FullName;
-        return $"{assemblyFolderPath}{relativePath}";
-    }
-
 }

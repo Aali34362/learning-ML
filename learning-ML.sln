@@ -65,6 +65,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonLibrary", "CommonLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "MicroSoftExample\CommonLibrary\CommonLib\CommonLib.csproj", "{A7E4CC85-E68D-488E-9433-94E1B445E601}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisClustering", "MicroSoftExample\Clustering\IrisClustering\IrisClustering.csproj", "{95BED270-E0D6-48FE-B61F-D5B0B159ADAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{A7E4CC85-E68D-488E-9433-94E1B445E601}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7E4CC85-E68D-488E-9433-94E1B445E601}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7E4CC85-E68D-488E-9433-94E1B445E601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BED270-E0D6-48FE-B61F-D5B0B159ADAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BED270-E0D6-48FE-B61F-D5B0B159ADAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BED270-E0D6-48FE-B61F-D5B0B159ADAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BED270-E0D6-48FE-B61F-D5B0B159ADAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +197,7 @@ Global
 		{3D69396C-3531-4E4F-9A51-33381C796B41} = {7B7E75A8-7325-4C5D-9FE7-0A57DFEE619A}
 		{687F0007-54CD-407A-BC6B-332374821A3E} = {6F03AB0E-CEAC-4727-807D-17BE1067E4E6}
 		{A7E4CC85-E68D-488E-9433-94E1B445E601} = {687F0007-54CD-407A-BC6B-332374821A3E}
+		{95BED270-E0D6-48FE-B61F-D5B0B159ADAD} = {BA785F15-6E11-41F3-8180-BAE1798961BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}

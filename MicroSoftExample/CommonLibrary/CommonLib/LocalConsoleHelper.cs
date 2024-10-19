@@ -1,4 +1,4 @@
-﻿namespace Common;
+﻿namespace CommonLib;
 
 public static class LocalConsoleHelper
 {
