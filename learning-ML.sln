@@ -73,13 +73,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseLoaderConsoleApp", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageClassification", "ImageClassification", "{87CD0E5C-7F0C-4149-8A25-74B368E564FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning_ImageClassification", "MicroSoftExample\ImageClassification\DeepLearning_ImageClassification\DeepLearning_ImageClassification.csproj", "{D4720632-AC0F-4E63-AABD-8679AF34FA0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_Binary", "MicroSoftExample\ImageClassification\DeepLearning_ImageClassification\ImageClassification_Binary.csproj", "{D4720632-AC0F-4E63-AABD-8679AF34FA0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConAppImagePredictRec", "MicroSoftExample\ImageClassification\ConAppImagePredictRec\ConAppImagePredictRec.csproj", "{60E3DC34-0C94-4E7F-A39C-558ACDA28163}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anime_Image_Classification", "MicroSoftExample\ImageClassification\Anime_Image_Classification\Anime_Image_Classification.csproj", "{606A9E4D-3775-4758-9C1D-D56778D7E10E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anime_ImageClassification", "MicroSoftExample\ImageClassification\Anime_ImageClassification\Anime_ImageClassification.csproj", "{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_TensorFlow", "MicroSoftExample\ImageClassification\DeepLearning_ImageClassification_TensorFlow\ImageClassification_TensorFlow.csproj", "{903FA6EF-95D5-46CD-9EC6-640660FF6116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -203,6 +205,10 @@ Global
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903FA6EF-95D5-46CD-9EC6-640660FF6116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903FA6EF-95D5-46CD-9EC6-640660FF6116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903FA6EF-95D5-46CD-9EC6-640660FF6116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903FA6EF-95D5-46CD-9EC6-640660FF6116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -243,6 +249,7 @@ Global
 		{60E3DC34-0C94-4E7F-A39C-558ACDA28163} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{606A9E4D-3775-4758-9C1D-D56778D7E10E} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
+		{903FA6EF-95D5-46CD-9EC6-640660FF6116} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}
