@@ -1,5 +1,5 @@
 ﻿using CCFraudDetection.Common.DataModels;
-using Common;
+using CommonLib;
 using Microsoft.ML;
 using System.Data;
 using System.IO.Compression;

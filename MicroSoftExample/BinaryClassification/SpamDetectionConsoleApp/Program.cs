@@ -1,4 +1,4 @@
-﻿using Common;
+﻿using CommonLib;
 using Microsoft.ML;
 using SpamDetectionConsoleApp.MLDataStructures;
 using System.IO.Compression;

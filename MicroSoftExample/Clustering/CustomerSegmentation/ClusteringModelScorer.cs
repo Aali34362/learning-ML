@@ -1,4 +1,4 @@
-﻿using Common;
+﻿using CommonLib;
 using CustomerSegmentation.DataStructures;
 using Microsoft.ML;
 using Microsoft.ML.Data;
@@ -73,7 +73,7 @@ namespace CustomerSegmentation.Model
 
         private static void SaveCustomerSegmentationPlotChart(IEnumerable<ClusteringPrediction> predictions, string plotLocation)
         {
-            Common.ConsoleHelper.ConsoleWriteHeader("Plot Customer Segmentation");
+            ConsoleHelper.ConsoleWriteHeader("Plot Customer Segmentation");
 
             var plot = new PlotModel { Title = "Customer Segmentation", IsLegendVisible = true };
 

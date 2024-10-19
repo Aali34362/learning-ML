@@ -1,4 +1,5 @@
 ﻿using CommonLib;
+using Microsoft.Extensions.Configuration;
 using Microsoft.ML;
 using Microsoft.ML.Vision;
 using static Microsoft.ML.DataOperationsCatalog;
@@ -7,9 +8,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Environment.SetEnvironmentVariable("TF_ENABLE_ONEDNN_OPTS", "0");
-
+        ////Environment.SetEnvironmentVariable("TF_ENABLE_ONEDNN_OPTS", "0");
         var path = PathFind.GetProjectRootPath();
+
+        var builder = new ConfigurationBuilder()
+                 .SetBasePath(path)
+                 .AddJsonFile("Properties/launchSettings.json", optional: false);
+
+        IConfiguration config = builder.Build();
+        string envVar = config[" profiles:ConsoleApp:environmentVariables:TF_ENABLE_ONEDNN_OPTS"]!;
+        Console.WriteLine($"Environment Variable: {envVar}");
+
+        
         var projectDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../"));
         var workspaceRelativePath = Path.Combine(path, "workspace");
         var assetsRelativePath = Path.Combine(path, "assets");

@@ -1,4 +1,4 @@
-﻿using Common;
+﻿using CommonLib;
 
 namespace CCFraudDetection.Predictor;
 
