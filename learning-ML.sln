@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticlassClassification_Au
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticlassClassification_Iris", "MicroSoftExample\MulticlassClassification\MulticlassClassification_Iris\MulticlassClassification_Iris.csproj", "{3EB4575B-578C-46A9-ADD7-565F101C5EF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticlassClassification_MNIST", "MicroSoftExample\MulticlassClassification\MulticlassClassification_MNIST\MulticlassClassification_MNIST.csproj", "{95709407-3503-4631-A4D0-3AA6B5DF1D3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -277,6 +279,10 @@ Global
 		{3EB4575B-578C-46A9-ADD7-565F101C5EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EB4575B-578C-46A9-ADD7-565F101C5EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EB4575B-578C-46A9-ADD7-565F101C5EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95709407-3503-4631-A4D0-3AA6B5DF1D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95709407-3503-4631-A4D0-3AA6B5DF1D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95709407-3503-4631-A4D0-3AA6B5DF1D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95709407-3503-4631-A4D0-3AA6B5DF1D3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -332,6 +338,7 @@ Global
 		{44A55B8B-645D-4C52-B03D-E06171D19849} = {6F03AB0E-CEAC-4727-807D-17BE1067E4E6}
 		{4B19D9D7-7DBB-4334-BC10-76EAF1EA868D} = {44A55B8B-645D-4C52-B03D-E06171D19849}
 		{3EB4575B-578C-46A9-ADD7-565F101C5EF2} = {44A55B8B-645D-4C52-B03D-E06171D19849}
+		{95709407-3503-4631-A4D0-3AA6B5DF1D3B} = {44A55B8B-645D-4C52-B03D-E06171D19849}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}
