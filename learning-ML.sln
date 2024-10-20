@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning_ObjectDetectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeDemandForecasting", "MicroSoftExample\SsaSpikeEstimator\BikeDemandForecasting\BikeDemandForecasting.csproj", "{35F2167C-F32C-43ED-9D4F-BBF6A399AD43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargeDatasets", "MicroSoftExample\BinaryClassification\LargeDatasets\LargeDatasets.csproj", "{4590D117-A766-4F6D-8503-016F9745BA81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,10 @@ Global
 		{35F2167C-F32C-43ED-9D4F-BBF6A399AD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35F2167C-F32C-43ED-9D4F-BBF6A399AD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35F2167C-F32C-43ED-9D4F-BBF6A399AD43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4590D117-A766-4F6D-8503-016F9745BA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4590D117-A766-4F6D-8503-016F9745BA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4590D117-A766-4F6D-8503-016F9745BA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4590D117-A766-4F6D-8503-016F9745BA81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -278,6 +284,7 @@ Global
 		{C64AD23D-B1FB-4786-B9E7-C39E990E4280} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{C381EDF6-A93E-4889-8E7A-0B503367C62B} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{35F2167C-F32C-43ED-9D4F-BBF6A399AD43} = {5B082539-E54B-4C5D-9135-13D3469CE6E5}
+		{4590D117-A766-4F6D-8503-016F9745BA81} = {7B7E75A8-7325-4C5D-9FE7-0A57DFEE619A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}
