@@ -83,6 +83,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_TensorF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_Binary", "MicroSoftExample\ImageClassification\ImageClassification_Binary\ImageClassification_Binary.csproj", "{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLearning_ImageClassification", "MicroSoftExample\ImageClassification\DeepLearning_ImageClassification\DeepLearning_ImageClassification.csproj", "{1A416DA4-E029-46C2-A25F-788131989623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_WebApp", "MicroSoftExample\ImageClassification\ImageClassification_WebApp\ImageClassification_WebApp.csproj", "{C64AD23D-B1FB-4786-B9E7-C39E990E4280}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +213,14 @@ Global
 		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A416DA4-E029-46C2-A25F-788131989623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A416DA4-E029-46C2-A25F-788131989623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A416DA4-E029-46C2-A25F-788131989623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A416DA4-E029-46C2-A25F-788131989623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64AD23D-B1FB-4786-B9E7-C39E990E4280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64AD23D-B1FB-4786-B9E7-C39E990E4280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64AD23D-B1FB-4786-B9E7-C39E990E4280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64AD23D-B1FB-4786-B9E7-C39E990E4280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -250,6 +262,8 @@ Global
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{35A5BA59-19C4-4C94-BDCC-51B78407DAE6} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
+		{1A416DA4-E029-46C2-A25F-788131989623} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
+		{C64AD23D-B1FB-4786-B9E7-C39E990E4280} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}
