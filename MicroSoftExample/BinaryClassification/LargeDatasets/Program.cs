@@ -56,7 +56,7 @@ class Program
         Console.WriteLine("====Evaluating the model=====");
         var predictions = mlModel.Transform(testDataView);
         var metrics = mlContext.BinaryClassification.Evaluate(data: predictions, labelColumnName: "LabelKey", scoreColumnName: "Score");
-        ConsoleHelper.PrintBinaryClassificationMetrics(mlModel.ToString(), metrics);
+        ConsoleHelper.PrintBinaryClassificationMetrics(mlModel.ToString()!, metrics);
 
         // Try a single prediction
         Console.WriteLine("====Predicting sample data=====");
