@@ -5,7 +5,7 @@ public class Program
 {
     static void Main(string[] args)
     {
-        string assetsRelativePath = @"../../../assets";
+        string assetsRelativePath = @"\assets";
         string assetsPath = PathFind.GetAbsolutePath(assetsRelativePath);
 
         var tagsTsv = Path.Combine(assetsPath, "inputs", "images", "tags.tsv");
