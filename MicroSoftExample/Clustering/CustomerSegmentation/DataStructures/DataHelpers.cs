@@ -1,4 +1,6 @@
-﻿namespace CustomerSegmentation.DataStructures;
+﻿using CommonLib;
+
+namespace CustomerSegmentation.DataStructures;
 
 public class DataHelpers
 {
@@ -11,7 +13,7 @@ public class DataHelpers
 
     public static IEnumerable<PivotData> PreProcess(string offersDataLocation, string transactionsDataLocation)
     {
-        Common.ConsoleHelper.ConsoleWriteHeader("Preprocess input files");
+        ConsoleHelper.ConsoleWriteHeader("Preprocess input files");
         Console.WriteLine($"Offers file: {offersDataLocation}");
         Console.WriteLine($"Transactions file: {transactionsDataLocation}");
 

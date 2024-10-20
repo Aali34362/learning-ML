@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="3.0.1" />
+    <PackageReference Include="Microsoft.ML.TensorFlow" Version="3.0.1" />
+    <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommonLibrary\CommonLib\CommonLib.csproj" />
+  </ItemGroup>
+
 </Project>

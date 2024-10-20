@@ -73,15 +73,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseLoaderConsoleApp", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImageClassification", "ImageClassification", "{87CD0E5C-7F0C-4149-8A25-74B368E564FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_Binary", "MicroSoftExample\ImageClassification\DeepLearning_ImageClassification\ImageClassification_Binary.csproj", "{D4720632-AC0F-4E63-AABD-8679AF34FA0B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConAppImagePredictRec", "MicroSoftExample\ImageClassification\ConAppImagePredictRec\ConAppImagePredictRec.csproj", "{60E3DC34-0C94-4E7F-A39C-558ACDA28163}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anime_Image_Classification", "MicroSoftExample\ImageClassification\Anime_Image_Classification\Anime_Image_Classification.csproj", "{606A9E4D-3775-4758-9C1D-D56778D7E10E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anime_ImageClassification", "MicroSoftExample\ImageClassification\Anime_ImageClassification\Anime_ImageClassification.csproj", "{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_TensorFlow", "MicroSoftExample\ImageClassification\DeepLearning_ImageClassification_TensorFlow\ImageClassification_TensorFlow.csproj", "{903FA6EF-95D5-46CD-9EC6-640660FF6116}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_TensorFlow", "MicroSoftExample\ImageClassification\ImageClassification_TensorFlow\ImageClassification_TensorFlow.csproj", "{35A5BA59-19C4-4C94-BDCC-51B78407DAE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageClassification_Binary", "MicroSoftExample\ImageClassification\ImageClassification_Binary\ImageClassification_Binary.csproj", "{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,10 +189,6 @@ Global
 		{75909126-0A64-457C-9189-00DD216EFE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75909126-0A64-457C-9189-00DD216EFE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75909126-0A64-457C-9189-00DD216EFE3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4720632-AC0F-4E63-AABD-8679AF34FA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4720632-AC0F-4E63-AABD-8679AF34FA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4720632-AC0F-4E63-AABD-8679AF34FA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4720632-AC0F-4E63-AABD-8679AF34FA0B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60E3DC34-0C94-4E7F-A39C-558ACDA28163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60E3DC34-0C94-4E7F-A39C-558ACDA28163}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60E3DC34-0C94-4E7F-A39C-558ACDA28163}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -205,10 +201,14 @@ Global
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{903FA6EF-95D5-46CD-9EC6-640660FF6116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{903FA6EF-95D5-46CD-9EC6-640660FF6116}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{903FA6EF-95D5-46CD-9EC6-640660FF6116}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{903FA6EF-95D5-46CD-9EC6-640660FF6116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A5BA59-19C4-4C94-BDCC-51B78407DAE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A5BA59-19C4-4C94-BDCC-51B78407DAE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A5BA59-19C4-4C94-BDCC-51B78407DAE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A5BA59-19C4-4C94-BDCC-51B78407DAE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -245,11 +245,11 @@ Global
 		{FC120DD2-2960-4E1A-9F50-6416F0CD0C98} = {7B7E75A8-7325-4C5D-9FE7-0A57DFEE619A}
 		{75909126-0A64-457C-9189-00DD216EFE3C} = {7B7E75A8-7325-4C5D-9FE7-0A57DFEE619A}
 		{87CD0E5C-7F0C-4149-8A25-74B368E564FA} = {6F03AB0E-CEAC-4727-807D-17BE1067E4E6}
-		{D4720632-AC0F-4E63-AABD-8679AF34FA0B} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{60E3DC34-0C94-4E7F-A39C-558ACDA28163} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{606A9E4D-3775-4758-9C1D-D56778D7E10E} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 		{CA2E26EC-2B1C-4F74-9EF9-AC76F8FF46A0} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
-		{903FA6EF-95D5-46CD-9EC6-640660FF6116} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
+		{35A5BA59-19C4-4C94-BDCC-51B78407DAE6} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
+		{C23AFDC9-667D-47AA-A23D-863BF2F1DF71} = {87CD0E5C-7F0C-4149-8A25-74B368E564FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}

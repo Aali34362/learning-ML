@@ -6,7 +6,7 @@ using static Microsoft.ML.TrainCatalogBase;
 
 namespace CommonLib;
 
-public static class ConsoleHelper
+public static partial class ConsoleHelper
 {
 
     private const int Width = 114;
@@ -498,6 +498,7 @@ public static class ConsoleHelper
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine(" ");
         Console.WriteLine("Press any key to finish.");
+        Console.ForegroundColor = defaultColor;
         Console.ReadKey();
     }
 
@@ -529,5 +530,5 @@ public static class ConsoleHelper
         {
             Console.WriteLine(line);
         }
-    }
+    }    
 }
