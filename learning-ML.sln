@@ -121,6 +121,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranking_Web", "MicroSoftExa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regression_AutoML", "MicroSoftExample\Regression\Regression_AutoML\Regression_AutoML.csproj", "{9844C3E6-2C4D-48A1-92A2-72E41DB917D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeSharingDemand", "MicroSoftExample\Regression\BikeSharingDemand\BikeSharingDemand.csproj", "{E25A7C65-4CC5-4894-BF28-3AC5C421F5C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +305,10 @@ Global
 		{9844C3E6-2C4D-48A1-92A2-72E41DB917D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9844C3E6-2C4D-48A1-92A2-72E41DB917D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9844C3E6-2C4D-48A1-92A2-72E41DB917D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E25A7C65-4CC5-4894-BF28-3AC5C421F5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25A7C65-4CC5-4894-BF28-3AC5C421F5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25A7C65-4CC5-4894-BF28-3AC5C421F5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25A7C65-4CC5-4894-BF28-3AC5C421F5C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -363,6 +369,7 @@ Global
 		{C9C1BB72-C327-4CFA-8BA6-4D2FCD15D2C3} = {DDAEE732-93C1-41DA-B079-BCC3540C7309}
 		{428D8CFE-78FC-4608-B7C7-541A70F637C4} = {DDAEE732-93C1-41DA-B079-BCC3540C7309}
 		{9844C3E6-2C4D-48A1-92A2-72E41DB917D1} = {47FC9BB8-5567-47C4-9B9E-1C4FE071F83E}
+		{E25A7C65-4CC5-4894-BF28-3AC5C421F5C0} = {47FC9BB8-5567-47C4-9B9E-1C4FE071F83E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}
