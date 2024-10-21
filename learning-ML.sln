@@ -125,6 +125,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeSharingDemand", "MicroS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ONNXExport", "MicroSoftExample\Regression\ONNXExport\ONNXExport.csproj", "{FBABFB34-42AD-4920-A43A-BDA3D8456B09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiFarePrediction", "MicroSoftExample\Regression\TaxiFarePrediction\TaxiFarePrediction.csproj", "{9591D21C-36EA-47DD-B903-0A881B1BF0F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +317,10 @@ Global
 		{FBABFB34-42AD-4920-A43A-BDA3D8456B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBABFB34-42AD-4920-A43A-BDA3D8456B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBABFB34-42AD-4920-A43A-BDA3D8456B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9591D21C-36EA-47DD-B903-0A881B1BF0F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9591D21C-36EA-47DD-B903-0A881B1BF0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9591D21C-36EA-47DD-B903-0A881B1BF0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9591D21C-36EA-47DD-B903-0A881B1BF0F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -377,6 +383,7 @@ Global
 		{9844C3E6-2C4D-48A1-92A2-72E41DB917D1} = {47FC9BB8-5567-47C4-9B9E-1C4FE071F83E}
 		{E25A7C65-4CC5-4894-BF28-3AC5C421F5C0} = {47FC9BB8-5567-47C4-9B9E-1C4FE071F83E}
 		{FBABFB34-42AD-4920-A43A-BDA3D8456B09} = {47FC9BB8-5567-47C4-9B9E-1C4FE071F83E}
+		{9591D21C-36EA-47DD-B903-0A881B1BF0F6} = {47FC9BB8-5567-47C4-9B9E-1C4FE071F83E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}
