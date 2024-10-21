@@ -117,6 +117,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ranking", "Ranking", "{DDAE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranking_AutoML", "MicroSoftExample\Ranking\Ranking_AutoML\Ranking_AutoML.csproj", "{C9C1BB72-C327-4CFA-8BA6-4D2FCD15D2C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranking_Web", "MicroSoftExample\Ranking\Ranking_Web\Ranking_Web.csproj", "{428D8CFE-78FC-4608-B7C7-541A70F637C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,10 @@ Global
 		{C9C1BB72-C327-4CFA-8BA6-4D2FCD15D2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9C1BB72-C327-4CFA-8BA6-4D2FCD15D2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9C1BB72-C327-4CFA-8BA6-4D2FCD15D2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428D8CFE-78FC-4608-B7C7-541A70F637C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428D8CFE-78FC-4608-B7C7-541A70F637C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428D8CFE-78FC-4608-B7C7-541A70F637C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428D8CFE-78FC-4608-B7C7-541A70F637C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -349,6 +355,7 @@ Global
 		{95709407-3503-4631-A4D0-3AA6B5DF1D3B} = {44A55B8B-645D-4C52-B03D-E06171D19849}
 		{DDAEE732-93C1-41DA-B079-BCC3540C7309} = {6F03AB0E-CEAC-4727-807D-17BE1067E4E6}
 		{C9C1BB72-C327-4CFA-8BA6-4D2FCD15D2C3} = {DDAEE732-93C1-41DA-B079-BCC3540C7309}
+		{428D8CFE-78FC-4608-B7C7-541A70F637C4} = {DDAEE732-93C1-41DA-B079-BCC3540C7309}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC0708F3-AE38-43B2-8608-D2A72DBBF658}
